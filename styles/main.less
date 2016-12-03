@@ -1,0 +1,40 @@
+@import "**/*";
+@import "./normalize.css";
+@import "./variables.less";
+
+html {
+  background-color: @background-color-default;
+}
+
+button {
+  border-radius: 5px;
+}
+
+// to be used everywhere
+.grid-row {
+  display: flex;
+  flex-flow: row wrap;
+  & > * {
+    flex-basis: 10em;
+    flex-grow: 1;
+  }
+}
+
+&.grid-column {
+  display: flex;
+  flex-flow: column;
+  & > * {
+    flex-basis: 10em;
+    flex-grow: 1;
+  }
+}
+
+div.container {
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 100px;
+  max-width: 900px;
+  padding: 15px;
+  border-radius: 5px;
+  background-color: lightgrey;
+}

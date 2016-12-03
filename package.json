@@ -1,0 +1,25 @@
+{
+  "name": "groupadg-web",
+  "version": "0.0.1",
+  "description": "variablized cms groupware",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "less": "lessc --glob ./styles/main.less ./styles/main.css",
+    "watch": "watchify index.js -o bundle.js -t [ babelify --presets [ es2015 ] ]"
+  },
+  "author": "David Brooks",
+  "license": "MIT",
+  "dependencies": {
+    "@cycle/dom": "^12.2.2",
+    "@cycle/http": "^11.0.0",
+    "@cycle/xstream-run": "^3.1.0",
+    "babel-cli": "^6.14.0",
+    "babel-preset-es2015": "^6.14.0",
+    "babelify": "^7.3.0",
+    "html-to-hyperscript": "^0.5.2",
+    "less-plugin-glob": "^1.1.1",
+    "socket.io-client": "^1.4.8",
+    "xstream": "6.2.0"
+  }
+}

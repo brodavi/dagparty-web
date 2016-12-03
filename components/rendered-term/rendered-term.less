@@ -1,0 +1,43 @@
+div.rendered-term-container {
+
+  div.button-div {
+    margin-bottom: 25px;
+    font-size: 11px;
+
+    button.edit-this-term-button {
+      float: right;
+    }
+  }
+
+  span {
+    margin-left: 5px;
+    margin-right: 5px;
+
+    &.number {
+      border-radius: 5px;
+      padding: 5px;
+      background-color: @number-background-color-default;
+      color: @number-color-default;
+    }
+
+    &.bool-true {
+      color: @bool-true-color-default;
+    }
+
+    &.bool-false {
+      color: @bool-false-color-default;
+    }
+  }
+
+  button {
+    &.link {
+      color: @button-text-color-default;
+      background-color: @button-color-default;
+    }
+    &.undefined {
+      color: @undefined-color-default;
+      background-color: @undefined-background-color-default;
+    }
+  }
+
+}
